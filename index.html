@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>S³ Acoustics</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>S³ Acoustics</h1>
+    <p>Perfecting Sound, One Space at a Time</p>
+  </header>
+
+  <section class="home">
+    <h2>Welcome to S³ Acoustics</h2>
+    <p>
+      We provide expert acoustic design, consultation, and installation services for studios, halls, and corporate spaces.
+    </p>
+    <a href="#contact" class="btn">Book a Free Consultation</a>
+  </section>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>
+      We are a Chennai-based acoustic consulting company offering custom design and treatment solutions using premium-grade materials and expert engineering.
+    </p>
+    <ul>
+      <li>Expert Sound Engineers</li>
+      <li>Custom Designs</li>
+      <li>Premium Materials</li>
+      <li>Affordable & Scalable</li>
+    </ul>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service-card">
+        <h3>Studio Acoustics Design</h3>
+        <p>Recording studios, mixing rooms, podcast booths</p>
+      </div>
+      <div class="service-card">
+        <h3>Hall & Auditorium Treatment</h3>
+        <p>Optimized for clarity and reverberation control</p>
+      </div>
+      <div class="service-card">
+        <h3>Corporate Noise Control</h3>
+        <p>Office soundproofing and acoustic privacy</p>
+      </div>
+      <div class="service-card">
+        <h3>Custom Panels & Bass Traps</h3>
+        <p>Hand-crafted, scientifically tuned acoustic solutions</p>
+      </div>
+    </div>
+  </section>
+<section class="gallery">
+  <h2>Our Work Gallery</h2>
+  <div class="gallery-grid">
+    <img src="images/project1.jpg" alt="Studio Installation">
+    <img src="images/project2.jpg" alt="Hall Treatment">
+    <img src="images/project3.jpg" alt="Acoustic Paneling">
+    <img src="images/project4.jpg" alt="Soundproof Booth">
+  </div>
+</section>
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: scubeacoustics@gmail.com</p>
+    <p>Phone: +91-9791274191</p>
+    <form onsubmit="sendWhatsAppMessage(event)">
+  <input type="text" id="name" placeholder="Name" required />
+  <input type="email" id="email" placeholder="Email" required />
+  <textarea id="message" placeholder="Message" required></textarea>
+  <button type="submit">Send via WhatsApp</button>
+  <script>
+  function sendWhatsAppMessage(e) {
+    e.preventDefault();
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+    const phoneNumber = "+91-9791274191"; // Replace with your WhatsApp number
+
+    const text = `Hi, I'm ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+    const url = `https://wa.me/${phoneNumber}?text=${text}`;
+
+    window.open(url, "_blank");
+  }
+</script>
+</form>
+    
