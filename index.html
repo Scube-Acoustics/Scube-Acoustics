@@ -15,7 +15,7 @@
   <section class="home">
     <h2>Welcome to S³ Acoustics</h2>
     <p>
-      We provide expert Acoustic design, Consultation and Installation services for Studios, Church halls, Auditoriums and Corporate spaces.
+      We provide expert Acoustic design, Consultation, and Installation services for studios, Halls, Auditoriums and Corporate spaces.
     </p>
     <a href="#contact" class="btn">Book a Free Consultation</a>
   </section>
@@ -38,7 +38,7 @@
     <div class="service-list">
       <div class="service-card">
         <h3>Studio Acoustics Design</h3>
-        <p>Recording studios, Mixing Rooms, Podcast Booths</p>
+        <p>Recording Studios, Mixing Rooms, Podcast Booths</p>
       </div>
       <div class="service-card">
         <h3>Hall & Auditorium Treatment</h3>
@@ -50,50 +50,80 @@
       </div>
       <div class="service-card">
         <h3>Custom Panels & Bass Traps</h3>
-        <p>Hand-crafted, scientifically tuned acoustic solutions</p>
+        <p>Hand-crafted, Scientifically tuned acoustic solutions</p>
       </div>
     </div>
   </section>
-<section class="gallery">
-  <h2>Our Work Gallery</h2>
-  <div class="gallery-grid">
-    <img src="images/project1.jpg" alt="Studio Installation">
-    <img src="images/project2.jpg" alt="Hall Treatment">
-    <img src="images/project3.jpg" alt="Acoustic Paneling">
-    <img src="images/project4.jpg" alt="Soundproof Booth">
-  </div>
-</section>
+
+  <section class="gallery">
+    <h2>Our Work Gallery</h2>
+    <div class="gallery-grid">
+      <img src="images/project1.jpg" alt="Studio Installation">
+      <img src="images/project2.jpg" alt="Hall and Auditorium Treatment">
+      <img src="images/project3.jpg" alt="Acoustic Paneling">
+      <img src="images/project4.jpg" alt="Soundproof Booth">
+    </div>
+  </section>
+
   <section class="contact" id="contact">
     <h2>Contact Us</h2>
     <p>Email: scubeacoustics@gmail.com</p>
     <p>Phone: +91-9791274191</p>
     <form onsubmit="sendWhatsAppMessage(event)">
-  <input type="text" id="name" placeholder="Name" required />
-  <input type="email" id="email" placeholder="Email" required />
-  <textarea id="message" placeholder="Message" required></textarea>
-  <button type="submit">Send via WhatsApp</button>
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <textarea id="message" placeholder="Message" required></textarea>
+      <button type="submit">Send via WhatsApp</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 S³ Acoustics. All rights reserved.</p>
+  </footer>
+
+  <!-- WhatsApp Chat Widget -->
+  <a
+    href="https://wa.me/+91-9791274191?text=Hi%20I%20am%20interested%20in%20your%20acoustic%20services"
+    class="whatsapp-float"
+    target="_blank"
+    title="Chat with us on WhatsApp"
+  >
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+  </a>
+
   <script>
-  function sendWhatsAppMessage(e) {
-    e.preventDefault();
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
-    const phoneNumber = "+91-9791274191"; // Replace with your WhatsApp number
+    function sendWhatsAppMessage(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+      const phoneNumber = "+91-9791274191"; // Replace with your number
 
-    const text = `Hi, I'm ${name}%0AEmail: ${email}%0AMessage: ${message}`;
-    const url = `https://wa.me/${phoneNumber}?text=${text}`;
+      const text = `Hi, I'm ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+      const url = `https://wa.me/${phoneNumber}?text=${text}`;
+      window.open(url, "_blank");
+    }
+  </script>
 
-    window.open(url, "_blank");
-  }
-</script>
-      <!-- WhatsApp Chat Widget -->
+<!-- WhatsApp Chat Widget -->
 <a
-  href="https://wa.me/+91-9791274191"
+  href="https://wa.me/+91-99791274191?text=Hi%20I%20am%20interested%20in%20your%20acoustic%20services"
   class="whatsapp-float"
   target="_blank"
   title="Chat with us on WhatsApp"
 >
   <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
 </a>
-</form>
-    
+
+<!-- Instagram Chat Widget -->
+<a
+  href="https://instagram.com/scube.in"
+  class="instagram-float"
+  target="_blank"
+  title="Check us out on Instagram"
+>
+  <img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png" alt="Instagram" />
+</a>
+</body>
+
+</html>
